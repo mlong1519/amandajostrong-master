@@ -1,0 +1,424 @@
+body {
+	background-color: #fffefe;
+	height: auto;
+	font-family: 'Raleway', sans-serif;
+	}
+
+/*************** LAYOUT ***************/
+
+header {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	height: 140px;
+	margin-bottom: -10px;
+	background-color: #fffefe;
+	border-bottom: 1px dashed black;
+	/* Background pattern from transparenttextures.com */
+	background-image: url("../img/fresh-snow.png");
+}
+
+.logo img {
+	position: relative;
+	height: 130px;
+	top: 5px;
+	left: 12%;
+	border-left: 1px dashed black;
+}
+
+.nav {
+	background-color: #fffefe;
+	position: absolute;
+	z-index: 1;
+	top: 141px;
+	left: 12%;
+	width: 130px;
+	height: 240px;
+	border-left: 1px dashed black;
+	/* Background pattern from transparenttextures.com */
+	background-image: url("../img/fresh-snow.png");
+}
+
+.wrapper_home,
+.wrapper_about,
+.wrapper_contact {
+	position: relative;
+	float: left;
+	z-index: 0;
+	top: 140px;
+	width: 100%;
+	height: auto;
+	min-height: 900px;
+	/* Background pattern from transparenttextures.com */
+	background-image: url("../img/asfalt-light.png");
+}
+
+.wrapper_home {
+	background-color: #8c8c8c;
+	background-image:
+    	linear-gradient( 
+    	to top,
+    	#666666,
+     	#8c8c8c 20%, 
+      	#fffefe);
+	border-top: 1px dashed black;
+}
+
+.wrapper_about {
+	background-color: #8c8c8c;
+	background-image:
+    	linear-gradient( 
+    	to top,
+    	#666666,
+     	#8c8c8c 10%, 
+      	#fffefe);
+}
+
+.wrapper_contact {
+	background-color: #8c8c8c;
+	background-image:
+    	linear-gradient( 
+    	to top,
+     	#666666,
+     	#8c8c8c 20%, 
+      	#fffefe);
+}
+
+.section_home {
+	position: relative;
+	z-index: 2;
+	width: 76%;
+	height: 800px;
+	left: 12%;
+
+}
+
+.section_about {
+	position: relative;
+	z-index: 2;
+	width: 76%;
+	height: 800px;
+	left: 12%;
+	
+}
+
+.section_contact {
+	position: relative;
+	z-index: 2;
+	width: 76%;
+	height: 800px;
+	left: 12%;
+
+}
+
+/*************** ABOUT **************/
+.profilepic {
+	position: relative;
+	float: left;
+	width: 60%;
+	margin-bottom: 20px;
+
+}
+
+.profilepic img {
+	max-height: 1000px;
+	margin-right: 10px;
+	width: 120%;
+	border-left: 1px dashed black;
+}
+
+.about {
+	position: relative;
+	float: left;
+	width: 40%;
+	margin-bottom: 0;
+	font-size: .9em;
+	height: auto;
+}
+
+.education {
+	position: relative;
+	float: left;
+	width: 30%;
+	border-bottom: 1px dashed black;
+	margin: 1%;
+	clear: left;
+	padding-bottom: 2%;
+}
+
+.experience {
+	position: relative;
+	float: right;
+	width: 60%;
+	border-left: 1px dashed black;
+	clear: right;
+	margin: 1%;
+	padding-left: 2%;
+}
+
+.coursework {
+	position: relative;
+	float: left;
+	width: 30%;
+	border-bottom: 1px dashed black;
+	margin: 1%;
+	padding-bottom: 3%;
+	clear: left;
+}
+
+.awards {
+	position: relative;
+	float: left;
+	width: 30%;
+	margin: 1%;
+	line-height: 1.2em;
+	clear: left;
+}
+
+/*************** TEXT ***************/
+
+.about p {
+	margin-left: 13%;
+	margin-top: 30px;
+}
+
+.experience h1 {
+	margin-left: 10px;
+}
+
+.experience h2 {
+	margin-left: 25px;
+	font-size: 22px;
+}
+
+.experience p {
+	margin-left: 60px;
+}
+
+.education h4 {
+	font-size: 13px;
+}
+
+.education h3, h4, p {
+	margin-left: 10px;
+}
+
+.coursework p {
+	margin-left: 10px;
+}
+
+.awards p {
+	margin-left: 10px;
+}
+
+/*************** NAV ***************/
+
+.nav ul {
+	list-style-type: none;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+.nav li {
+	padding-bottom: 18px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #666666;
+	text-align: left;
+	font-size: 1.2em;
+}
+
+/*************** LINKS ***************/
+
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+a:focus {
+	color: skyblue;
+}
+
+a:hover {
+	color: firebrick;
+	font-size: 1.3rem;
+}
+
+.nav a:hover {
+	border-bottom: 1px dashed black;
+}
+
+a:active {
+	color: skyblue;
+}
+
+.linkedin {
+	width: 30px;
+	height: 30px;
+}
+
+.wordpress {
+	width: 30px;
+	height: 30px;
+
+}
+
+.linkedin:hover,
+.wordpress:hover {
+	width: 33px;
+	height: 33px;
+}
+
+#about,
+#home,
+#contact {
+	color: firebrick;
+	border-bottom: 1px dashed black;
+	font-size: 1.3rem;
+}
+
+/********** Media Queries ************/
+
+/***** Tablet *****/
+
+@media (max-width: 1085px) {
+	.wrapper_home,
+	.wrapper_about,
+	.wrapper_contact {
+		min-height: 1200px;
+	}
+	.about,
+	.education,
+	.experience,
+	.coursework,
+	.awards {
+		float: left;
+		clear: both;
+		width: 85%;
+		margin: 10px 5px;
+		border-top: 1px dashed black;
+		border-left: none;
+		border-bottom: none;
+		border-right: none;
+	}
+	.profilepic {
+		margin-bottom: 20px;
+		max-height: 350px;
+		padding-bottom: 2%;
+
+	}
+	.profilepic img {
+		max-height: 350px;
+		height: auto;
+	}
+	.about {
+		width: 85%;
+		margin-bottom: 10px;
+		padding-bottom: 2%;
+		padding-top: 2%;
+	}
+	.about p {
+		padding: 1%;
+		margin: 5px 10px;
+	}
+	.experience {
+		padding-left: 0;
+	}
+	.experience h1 {
+		margin-left: 0;
+	}
+	.coursework {
+		padding-bottom: 0;
+	}
+}
+
+/***** Mobile *****/
+
+@media (max-width: 720px) {
+	.nav {
+		position: relative;
+		width: 85%;
+		height: auto;
+		text-align: left;
+		float: left;
+		display: inline-block;
+		text-align: center;
+		margin-top: 2px;
+		top: 80px;
+	}
+	.nav li {
+		display: inline-block;
+		padding: 0 2% 0 0;
+		margin-left: 0;
+	}
+	.linkedin,
+	.wordpress {
+		width: 23px;
+		height: 23px;
+		padding-top: 5px;
+	}
+	.profilepic {
+		float: left;
+		clear: both;
+		width: 85%;
+	}
+	.about {
+		clear: both;
+	}
+
+	.section_about {
+		margin-right: 0;
+	}
+
+	.wrapper_about p,
+	.section_about p,
+	.about p,
+	.education p,
+	.experience p,
+	.coursework p,
+	.awards p {
+		margin: 10px 0;
+	}
+
+	.about,
+	.education,
+	.experience,
+	.coursework,
+	.awards p {
+		width: 85%;
+	}
+	.profilepic img {
+		border: none;
+	}
+	.logo {
+		height: 80px;
+	}
+	.logo img {
+		position: relative;
+		height: 80px;
+		left: 12%;
+		top: 0px;
+	}
+	header {
+		height: 80px;
+	}
+	.wrapper_about {
+		top: 80px;
+	}
+	
+	.linkedin:hover,
+	.wordpress:hover {
+	width: 26px;
+	height: 26px;
+}
+
+
+
+/* Clearfix */
+
+.clearfix {
+	clear:both;
+}
